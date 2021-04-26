@@ -3,14 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+import { PizzaAppModule } from './pizza-app/pizza-app.module';
+
 @NgModule({
-  declarations: [
+  imports: [
+    BrowserModule,
+    PizzaAppModule
+  ],
+  bootstrap: [
     AppComponent
   ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  declarations: [
+    AppComponent
+  ]
 })
-export class AppModule { }
+export class AppModule {}

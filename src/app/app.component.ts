@@ -2,9 +2,11 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['app.component.scss'],
+  template: `
+    <div class="app">
+      <pizza-app></pizza-app>
+    </div>
+  `
 })
-export class AppComponent {
-  title = 'ngx-pizza-creator';
-}
+export class AppComponent {}
