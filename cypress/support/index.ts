@@ -18,3 +18,7 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+// cypress/support/index.js
+// core-js 3.*
+require('core-js/es/reflect');
+require('cypress-angular-unit-test/support');
